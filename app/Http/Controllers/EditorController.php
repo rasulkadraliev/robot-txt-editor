@@ -30,6 +30,8 @@ class EditorController extends Controller
         $new_file = fopen($this->filename, "w") or die ("Unable to open file!");
         fwrite($new_file, $request->text);
 
+        echo '<script>alert("Your robots.txt file is saved")</script>';
+
         return view('edit-form', ['file_content' => $this->file_content,]);
     }
 
