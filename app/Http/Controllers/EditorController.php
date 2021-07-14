@@ -20,7 +20,7 @@ class EditorController extends Controller
         } else {
             $this->file_content = file_get_contents($this->filename);
         }
-        return view('edit-form', ['file_content' => $this->file_content,]);
+        return view('kadraliev.robottxteditor.views.edit-form', ['file_content' => $this->file_content,]);
     }
 
     public function saveFile(Request $request) {
@@ -32,7 +32,7 @@ class EditorController extends Controller
 
         echo '<script>alert("Your robots.txt file is saved")</script>';
 
-        return view('edit-form', ['file_content' => $this->file_content,]);
+        return view('kadraliev.robottxteditor.views.edit-form', ['file_content' => $this->file_content,]);
     }
 
 }

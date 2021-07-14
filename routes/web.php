@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', 'EditorController@openFile')->name('editor.open');
+Route::get('/edit-form', 'EditorController@openFile')->name('editor.open');
 
-Route::post('/', 'EditorController@saveFile')->name('editor.save');
+Route::post('/edit-form', 'EditorController@saveFile')->name('editor.save');

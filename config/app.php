@@ -1,5 +1,7 @@
 <?php
 
+use Kadraliev\RobotTxtEditor\RobotTxtEditorProvider;
+
 return [
 
     /*
@@ -165,6 +167,8 @@ return [
         /*
          * Package Service Providers...
          */
+
+        RobotTxtEditorProvider::class,
 
         /*
          * Application Service Providers...

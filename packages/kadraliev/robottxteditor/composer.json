@@ -1,0 +1,25 @@
+{
+    "name": "kadraliev/robot-txt-editor",
+    "type": "library",
+    "description": "Laravel package for editing of robot.txt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rasul Kadraliev",
+            "email": "rasul@kadraliev.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kadraliev\\Robottxteditor\\RobotTxtEditorProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Kadraliev\\Robottxteditor\\": "src/"
+        }
+    }
+}
